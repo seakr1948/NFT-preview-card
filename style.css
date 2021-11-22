@@ -1,0 +1,150 @@
+/* Custom variables */
+
+:root{
+    --accent-clr: 178, 100%, 50%;
+    --primary-clr: 215, 51%, 70%;
+    --line-clr: 215, 32%, 27%;
+    --main-bg: 217, 54%, 11%;
+    --card-bg: 216, 50%, 16%;
+}
+
+/* General Reset */
+*,
+*::before,
+*::after{
+    box-sizing: border-box;
+}
+
+h5,
+h4,
+h3,
+h2,
+h1,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+p{font-size: 18px;}
+
+img{
+    width: 100%;
+    display: block;
+}
+
+i {
+    margin: auto;    
+}
+
+body{
+    background-color: hsl(var(--main-bg));
+    color: hsl(var(--primary-clr));
+    font-family: 'Outfit', sans-serif;
+    line-height: 1.6;
+}
+
+/* Utility classes */
+
+.flex{
+    display: flex;
+}
+
+.container{
+    padding: 1em;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Card classes */
+.card{
+    background-color: hsl(var(--card-bg));
+    padding: 1em;
+    max-width: 350px;
+    border-radius: 15px;
+    box-shadow: 0 20px 20px 20px hsla(0, 0%, 0%, 0.3);
+}
+
+.card > *{
+    
+    margin: 1em;
+}
+
+.card img{
+    border-radius: 5px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card h3{
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-text{
+    font-weight: 300;
+}
+
+/* Price and time classes */
+.price-and-time{
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 0 0 10px 0;
+    border-bottom: 1px solid hsl(var(--line-clr));
+}
+
+.price-and-time p{
+    font-size: 16px;
+    padding: 0 0.2em;
+    
+}
+
+.price{
+    color: hsl(var(--accent-clr));
+}
+
+.price i{
+    font-size: 18px;
+}
+
+.price p{
+    margin-left: 3px;
+}
+
+.time i{
+    margin-right: 3px;
+}
+
+/* Creator classes */
+.creator-details{
+    align-items: center;
+}
+
+.creator-details p{
+    
+    font-weight: 300;
+    font-size: medium;
+    margin-left: 10px;
+}
+
+.creator-name{
+    color: white;
+}
+
+
+.creator-image{
+    
+    aspect-ratio: 1;
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.creator-image i{
+    border-radius: 50%;
+    padding: 0.3em;
+    border: 1px solid white;
+    font-size: 20px;
+}
+
