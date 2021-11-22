@@ -70,16 +70,42 @@ body{
     margin: 1em;
 }
 
-.card img{
-    border-radius: 5px;
+.card-img{
+    background: url('https://cdn.pixabay.com/photo/2020/08/02/14/18/blue-5457731__480.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     height: 250px;
     object-fit: cover;
+    border-radius: 10px;
+    transition: background-color 0.2s ease-in;
+}
+
+.card-img:hover{
+    background-color: hsla(var(--accent-clr), 0.4);
+    background-blend-mode: overlay;
+}
+
+.card-img i{
+    opacity: 0;
+    color: white;
+    font-size: 40px;
+    transition: opacity 0.2s ease-in;
+}
+
+.card-img:hover i{
+    opacity: 1;
 }
 
 .card h3{
     color: white;
     font-weight: 600;
     font-size: 20px;
+    transition: color ease-in 250ms;
+}
+
+.card h3:hover{
+    color: hsl(var(--accent-clr));
 }
 
 .card-text{
@@ -126,6 +152,14 @@ body{
     font-weight: 300;
     font-size: medium;
     margin-left: 10px;
+}
+
+.creator-details span{
+    transition: color ease-in 250ms;
+}
+
+.creator-details span:hover{
+    color: hsl(var(--accent-clr));
 }
 
 .creator-name{
