@@ -58,6 +58,7 @@ body{
 
 /* Card classes */
 .card{
+    
     background-color: hsl(var(--card-bg));
     padding: 1em;
     max-width: 350px;
@@ -71,6 +72,7 @@ body{
 }
 
 .card-img{
+    
     background: url('https://cdn.pixabay.com/photo/2020/08/02/14/18/blue-5457731__480.jpg');
     background-position: center;
     background-repeat: no-repeat;
@@ -78,12 +80,16 @@ body{
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
-    transition: background-color 0.2s ease-in;
+    background-blend-mode: screen;
+    background-color: transparent;
+    transition: background-color 0.3s;
+    -webkit-transition: background-color 0.3s;
 }
 
 .card-img:hover{
     background-color: hsla(var(--accent-clr), 0.4);
-    background-blend-mode: overlay;
+    
+    
 }
 
 .card-img i{
